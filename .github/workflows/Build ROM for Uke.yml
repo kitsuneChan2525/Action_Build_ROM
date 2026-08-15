@@ -1,4 +1,4 @@
-name: Build ROM for Marble
+name: Build ROM for Uke
 on:
   workflow_dispatch:
     inputs:
