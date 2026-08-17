@@ -1,4 +1,5 @@
 # HyperOS Port for uke
+## 开不起来 等等看有没有作业抄抄QAQ
 ## Special thanks to lingqiqi5211, Kyuofox, YuKongA, sekaiacg, SkipM4
 ### Usage
 - Download ALL ZIP PACKAGES
