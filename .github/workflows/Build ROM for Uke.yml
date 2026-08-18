@@ -27,6 +27,10 @@ on:
         required: true
         type: boolean
         default: false
+      ENABLE_ADB:
+        description: '强制启用adb'
+        required: true
+        type: boolean
 
 jobs:
   build:
@@ -70,7 +74,8 @@ jobs:
             "${{ github.event.inputs.PERFECTICON }}" \
             "$GITHUB_ENV" \
             "$GITHUB_WORKSPACE" \
-            "${{ steps.setup-ndk.outputs.ndk-path }}"
+            "${{ steps.setup-ndk.outputs.ndk-path }}" \
+            "${{ github.event.inputs.ENABLE_ADB }}"
       - name: 处理 ROM
         run: |
           mkdir -p "$GITHUB_WORKSPACE"/GithubRelease
